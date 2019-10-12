@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+
+    <title>vueProject</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/Amaze/flat.css">
+    <link rel="stylesheet" href="css/Amaze/amazeui.css"/>
+    <link rel="stylesheet" href="css/Amaze/admin.css">
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but vue-test2 doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="js/Amaze/amazeui.min.js"></script>
+    <script src="js/Amaze/app.js"></script>
+    <script>
+        function hide() {
+            $(".admin-sidebar").addClass("hide");
+            $("#hide").addClass("hide");
+            $("#show").removeClass("hide");
+        }
+
+        function show() {
+            $(".admin-sidebar").removeClass("hide");
+            $("#show").addClass("hide");
+            $("#hide").removeClass("hide");
+        }
+    </script>
+  </body>
+</html>
